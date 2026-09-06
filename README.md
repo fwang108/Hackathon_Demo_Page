@@ -8,8 +8,6 @@ Three visual themes of the same hackathon page — pick the one you like, or use
 
 The deployed build at [infinite-hackathon.vercel.app](https://infinite-hackathon.vercel.app). Features the improved origami crane model: puffed diamond torso, folded neck with beak, raised tail, and gap-free swept wings.
 
-![swarm — origami cranes](swarm/cranes-swarm.gif)
-
 ## v1 — Blue (synthwave)
 
 Origami cranes over an ocean surface, dark blue + cyan. Original theme.

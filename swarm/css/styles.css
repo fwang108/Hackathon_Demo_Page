@@ -193,29 +193,15 @@ body.no-webgl {
 }
 
 .identity--lamm {
-  gap: 0.65rem;
   margin-left: -4px;
 }
 
-.identity__lattice {
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
-  object-fit: cover;
-  border-radius: 50%;
-  mix-blend-mode: screen;
-}
-
-.identity__lamm-word {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--sans);
-  font-size: 0.68rem;
-  font-weight: 600;
-  line-height: 1.14;
-  letter-spacing: -0.025em;
-  white-space: nowrap;
-  opacity: 0.94;
+.identity__lamm-logo {
+  display: block;
+  width: 190px;
+  max-height: 40px;
+  height: auto;
+  filter: invert(1);
 }
 
 .identity--e14 img {
@@ -349,17 +335,9 @@ body.no-webgl {
     flex-basis: 96px;
   }
 
-  .identity--lamm { gap: 0.3rem; }
-
-  .identity__lattice {
-    width: 31px;
-    height: 31px;
-    flex-basis: 31px;
-  }
-
-  .identity__lamm-word {
-    font-size: 0.48rem;
-    line-height: 1.1;
+  .identity__lamm-logo {
+    width: 145px;
+    max-height: 30px;
   }
 
   .identity--e14 img {
@@ -399,13 +377,7 @@ body.no-webgl {
   .identity__institutions { gap: 22px; }
   .identity--mit img { height: 28px; }
 
-  .identity__lattice {
-    width: 36px;
-    height: 36px;
-    flex-basis: 36px;
-  }
-
-  .identity__lamm-word { font-size: 0.62rem; }
+  .identity__lamm-logo { width: 175px; }
   .identity--e14 img { height: 30px; }
 }
 

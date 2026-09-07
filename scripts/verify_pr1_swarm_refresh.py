@@ -96,9 +96,15 @@ def verify_logo(source: Path) -> None:
         raise AssertionError("animated or duplicate LAMM header treatment remains")
 
     css = STYLES.read_text(encoding="utf-8")
-    logo_rule = re.search(r"\.identity__lamm-logo\s*\{([^}]*)\}", css, re.DOTALL)
+    logo_rule = re.search(
+        r"\.identity--lamm\s+\.identity__lamm-logo\s*\{([^}]*)\}",
+        css,
+        re.DOTALL,
+    )
     if not logo_rule or not re.search(r"filter\s*:\s*invert\(1\)", logo_rule.group(1)):
         raise AssertionError("LAMM logo CSS must invert the supplied black SVG")
+    if not re.search(r"max-width\s*:\s*none", logo_rule.group(1)):
+        raise AssertionError("LAMM logo must override generic flex-image max-width sizing")
 
 
 def main() -> int:

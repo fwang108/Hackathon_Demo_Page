@@ -196,9 +196,10 @@ body.no-webgl {
   margin-left: -4px;
 }
 
-.identity__lamm-logo {
+.identity--lamm .identity__lamm-logo {
   display: block;
   width: 190px;
+  max-width: none;
   max-height: 40px;
   height: auto;
   filter: invert(1);
@@ -335,7 +336,7 @@ body.no-webgl {
     flex-basis: 96px;
   }
 
-  .identity__lamm-logo {
+  .identity--lamm .identity__lamm-logo {
     width: 145px;
     max-height: 30px;
   }
@@ -377,7 +378,7 @@ body.no-webgl {
   .identity__institutions { gap: 22px; }
   .identity--mit img { height: 28px; }
 
-  .identity__lamm-logo { width: 175px; }
+  .identity--lamm .identity__lamm-logo { width: 175px; }
   .identity--e14 img { height: 30px; }
 }
 
